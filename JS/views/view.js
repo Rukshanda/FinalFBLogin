@@ -209,14 +209,41 @@ const renderPosts = post => {
             <span class="likesInc">${post.likes} likes</span>
           </div>
           <div class="post-reaction">
-            <div class="post-reaction--box1 flex-row space-btw"></div>
-            <div class="post-reaction--box2">
-              <div class="reaction-list flex-row space-btw">
-                <!-- Your like, share, comment buttons here -->
-              </div>
-            </div>
+          <div class="post-reaction--box1 flex-row space-btw">
           </div>
-        </div>
+          <div class="post-reaction--box2">
+             <div class="reaction-list flex-row space-btw">
+                 <div class="like-btn flex-row col-gapx1 rec-btn" id = "like-btn" >
+                  
+                     <div class="like-icon" >
+
+                     <i data-visualcompletion="css-img" id = "${post.id}" class="x1b0d499 x1d69dk1  like-outline" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/FA22Qd7z224.png');background-position:0 -774px;background-size:26px 1572px;width:20px;height:20px;background-repeat:no-repeat;display:inline-block"></i>
+                         <i data-visualcompletion="css-img" class="like-fill" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/dQOJBZTzfzn.png&quot;); background-position: 0px -126px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; "></i>
+                     </div>
+                     <div class="rec-text txt-white like-txt">
+                         Like
+                     </div>
+                 </div>
+                 <div class="share-btn flex-row col-gapx1 rec-btn">
+                       <div class="share-icon">
+                        <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GYWdmyyokPX.png&quot;); background-position: 0px -191px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                       </div> 
+                       <div class="rec-text txt-white">
+                         Share
+                       </div>
+                 </div>
+                 <div class="comment-btn flex-row col-gapx1 rec-btn">
+                     <div class="comment-icon">
+                         <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GYWdmyyokPX.png');background-position:0 -134px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+                     </div>
+                     <div class="rec-text txt-white">
+                          Comment
+                     </div>
+                 </div>
+             </div>
+          </div>
+     </div>
+ </div>
       `;
       
       return markUp;
