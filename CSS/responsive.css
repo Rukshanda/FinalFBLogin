@@ -1,0 +1,260 @@
+
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+ 
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav-bar--box{
+        position: relative;
+    }
+  
+    .search-icon{
+        color: #e4e6eb;
+        background-color: rgb(255 255 255 / 10%);
+        border-radius: 50%;
+        padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+        text-align: center;
+        display: block;
+        margin-right: 39vw;
+        margin-top: 0.3rem;
+       
+  
+
+      }
+     .search-btn{
+        display: none;
+     }
+
+     .nav-bar--boxres{
+        display: block !important;
+     }
+
+     
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+    .search-icon{
+        margin-right: 8vw;
+        
+    }
+    .logo-img{
+        width: 8rem;
+    }
+    .res-navbar{
+        display: block !important;
+    }
+  
+ 
+    .sub-section--box1{
+        display: none;
+    }
+ 
+
+    .sub-section--box2{
+    display: none;
+   }
+   .script-content-box{
+     display: block !important;
+     margin-top: 4rem;
+   }
+   .section-1{
+    display: none;
+   }
+   .text-btn--box {
+    background-color: var(--color-gray);
+    color: var(--text-white);
+    padding: 0.8rem 6vw !important;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color: white !important;
+}
+   .head-box2{
+    justify-content: start !important;
+   }
+   .res-photo{
+    margin-top: 0.6rem;
+   }
+   .res-head-stories{
+    display: block !important;
+   }
+
+
+    .all-boxes{
+      margin-left: 0.5rem !important;
+    }
+
+
+
+    .post{
+      width: 90vw !important;
+      height: 535px !important;
+    }
+
+
+    .pst-img{
+      height: 330px !important;
+    }
+
+
+    .section-post{
+      justify-content: start !important;
+    }
+
+
+    .rec-btn {
+      padding: 9px 11px !important;
+  }
+
+
+   .rec-text{
+    font-size: 14px;
+   }
+
+   .stories-section-box{
+    width: 150vw;
+   }
+
+    .script-content-box{
+      width: 100%;
+    }
+    .script-contnet{
+      width: 90vw;
+    }
+   
+}
+
+/*        x      Viewport less then or equal to 520px       x     */
+
+@media (max-width: 768px) {
+    .search-navbox{
+        margin-left: 1.5rem !important;
+    }
+    .logo-img{
+        width: 7rem;
+        padding-top: 0.6rem;
+    }
+    
+ 
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 1160px) {
+    .side-bar{
+      display: none;
+    }
+    .res-sidebar{
+      display: block;
+    }
+    .section-1{
+      width: 60px;
+    }
+     
+    .side-bar-content{
+      width: 100px;
+    }
+    .all-boxes{
+       width: 690px !important;
+    }
+    .contact-section{
+      margin-left: 3vw !important;
+    }
+  }
+  @media (max-width: 1080px) {
+   
+    .section-3{
+      width: 30vw;
+    }
+    .all-boxes{
+      width: 590px  !important;
+    }
+    .sub-section--box2{
+      width: 590px  !important;
+    }
+    .post-box{
+      width:590px ;
+    }
+    .script-text{
+      font-size: 1rem !important;
+    }
+    .script-item-box{
+      padding: 6px 25px;
+    }
+    .post{
+      width: 580px;
+    }
+    .rec-btn{
+      padding: 9px 49px;
+    }
+  }
+  
+  @media (max-width:900px) {
+    .section-3{
+      display: none !important;
+    }
+    .all-boxes{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 16vw;
+      margin-left: 4vw;
+    }
+  }
+  @media (max-width: 1650px) {
+    .res-sidebar{
+      display: none;
+    }
+    .res-navbar{
+        display: none;
+    }
+ 
+    .script-content-box{
+      display: none;
+    }
+    .res-head-stories{
+      display: none;
+    }
+  }
+
+
+  @media  (max-width: 360px) {
+    .text-btn--box{
+      padding: 0.7rem 2vw !important;
+    }
+    .rec-btn{
+      padding: 9px 7px !important;
+    }
+    .like-btn,.share-btn,.comment-btn{
+      column-gap: 5px !important;
+    }
+    .search-icon{
+      margin-right: 0 !important;
+    }
+  }
+
+  .res-navbar{
+    display: none;
+  }

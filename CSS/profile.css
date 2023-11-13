@@ -1,0 +1,203 @@
+ 
+.headerSec{
+ margin-top: 80px;
+ padding-bottom: 10px;
+ border-bottom: 1.5px solid rgba(109, 106, 106, 0.651);
+}
+.personImg{
+
+}
+
+.personText{
+
+}
+
+.main{
+
+}
+
+.mainSection{
+ display: flex;
+ justify-content: space-between;
+ margin: 20px 80px 20px 80px;
+ 
+}
+
+.mainSection--box1{
+    width: 360px;
+    background-color: #49454582;
+    height: 150px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+.box1--btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introDiv{
+
+}
+#addBio{
+ background-color: rgb(58, 59, 60 , 1);
+ color: white;
+ font-size: 0.9rem;
+ outline: none;
+ border: none;
+ padding: 6px;
+ border-radius: 6px;
+ margin-bottom: 8px;
+
+}
+.addHobbies{
+    background-color: rgb(58, 59, 60 , 1);
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.mainSection--box2{
+
+}
+
+.buttonPost{
+
+}
+.postBtnShow{
+    background-color: rgb(58, 59, 60 , 1);
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    width: 250px;
+}
+
+.UIPost{
+    
+}
+
+.imgPersonProfile{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.personImgCont{
+    display: flex;
+   
+}
+
+.whole-mainSec--1{
+    display: flex;
+    flex-direction: column;
+}
+.mainSection--textBox{
+    margin-top: 20px;
+    width: 360px;
+    display: none;
+}
+textarea{
+    background-color: #49454582;
+    border: 1px solid #49454582; 
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    width: 360px;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+.add{
+    background-color: rgb(103, 103, 103);
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    width: 360px;
+    margin-top: 10px;
+}
+
+.user-bio{
+    width: 360px;
+    color: white;
+    background-color: #49454582;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 200px;
+    border: 1px solid white;
+    display: none;
+    overflow-y: hidden;
+    overflow-x:hidden ;
+    height: 300px;
+}
+.aboutMe {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.user-bio--text{
+    margin-top: 15px;
+    
+}
+
+.user-bio--head{
+    display: flex;
+    justify-content: space-between;
+}
+
+#edit-btn{
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    background-color: #cdc9c9;
+    width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    color: #453e3e;
+    border: 2px solid #453e3e;
+    display: none;
+}
+.user-bio--main{
+    display: flex;
+    flex-direction: column;
+ 
+}
+#save-btn{
+    background-color: #cdc9c9;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: #453e3e;
+    border: 2px solid #453e3e;
+    margin-top: 11rem;
+    display: none;
+   
+}
+
+.editActive {
+    cursor: text;
+}
+
+:focus{
+    outline: none;
+}
+
+.myPosts{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}

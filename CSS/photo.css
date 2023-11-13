@@ -1,0 +1,114 @@
+
+ 
+.thinks-Cont , .thinks-Cont2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 420px;
+    background-color: rgba(36, 37, 38, 1);
+    width: 400px;
+    height: 410px;
+    box-shadow: 0px 0px 6px 6px rgb(30 30 30 / 71%);
+    display : block;
+    
+}
+.thinks-Cont{
+    height: 430px;
+}
+.default-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: rgb(147, 147, 147);
+}
+
+.photo-label{
+  display: block;
+  width: 85px;
+  background-color: hsl(214, 100%, 59%);;
+  color: #fff;
+  padding:4px;
+  margin: 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  
+}
+.fileFor{
+    display: none;
+}
+
+.remove{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textsmall{
+    width: 300px;
+}
+
+ 
+
+
+.felxContent , .felxContent2{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #faf9f9b8;
+    display: none;
+}
+
+.felxContent2{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.remove{
+    display: none;
+}
+
+.ask-text{
+    background-color: transparent;
+    border: none;
+    outline : none;
+    color: white;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.ask-text:focus{
+    border: none;
+    outline: none;
+}
+
+
+.parent {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.child::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+ 
+
+.userImgPost{
+    display: none;
+}

@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --link-1 : #1877f2;
+    --link-2 : #1c1e21;
+    --blue-bg : #1877f2;
+    --bg-form : #ffff;
+    --bg-page: #f0f2f5;
+    --border-color: #dadde1;
+    --new-acount : #42b72a;
+    --font :'Fira Sans Condensed', sans-serif;
+    --shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+body{
+    background-color: var(--bg-page);
+}
+input{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+textarea, input { outline: none; }
+
+a{
+
+    text-decoration: none;
+    
+}
+.container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 720px;
+    font-family: var(--font);
+    margin: auto;
+}
+.count-2{
+
+}
+.form-cont{
+    background-color: var(--bg-form);
+    padding: 20px;
+  
+    width: 440px;
+    height: 355px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow:var(--shadow) ;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+
+
+.input{
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px rgb(117, 112, 112) solid;
+  color: gray;
+  font-size: 1.1rem;
+}
+.pasword{
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+ 
+.login{
+    background-color: var(--blue-bg);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.link-1{
+    color: var(--link-1);
+    margin-bottom: 30px;
+    padding-top: 35px;
+    font-size: 1.1rem;
+    
+
+}
+.text-line{
+    border: 2px solid var(--border-color);
+    margin-top: 25px;
+}
+#new-account{
+    margin-top: 20px;
+    width: 50%;
+    background-color: var(--new-acount);
+    color: var(--bg-form);
+    border: none;
+}
+
+.last-text{
+    margin-top: 5px;
+}
+
+.logo-img {
+    fill: var(--blue-bg);
+    width: 15rem;
+    padding-top: 0.4rem;
+}
+.link-2{
+    color: var(--link-2);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.text{
+    font-size: 1.7rem;
+    width: 60%;
+    color: var(--link-2);
+    font-weight: bold;
+}

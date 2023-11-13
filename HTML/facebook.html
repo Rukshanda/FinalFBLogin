@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <!-- boostrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!--  -->
+    <!-- style.css link -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="/CSS/photo.css">
+    <link rel="stylesheet" href="/CSS/singUp.css">
+    <!--  -->
+    <!-- facebook-icon -->
+    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png">
+    <!--  -->
+</head>
+<body>
+    
+    <!--  -->
+    <!-- thoughts dialogue box -->
+    <div class="felxContent" style="z-index: 1 !important;  background-color: rgb(14, 14, 14 , 40%)!important; ">
+
+        <div class="thinks-Cont" style="height: 450px;">
+            <div class="hole-fb-think--1 flex-row" style="justify-content: center;
+            padding: 15px;
+            border-bottom: solid #524e4e 1px;">
+
+           
+            <div class="fb-th--1 flex-row" style="justify-content: center;">
+                <div class="cr-post--text">
+                     <h3 class="cr-poost--head" style="text-align: center !important; columns: white-space; color: white;">
+                        Create Post
+                     </h3>
+                </div>
+            </div>
+             
+            <div class="cr-post--btn">
+                <div class="btn--bg">
+                  <div class="cross-btn" id="crossBTN" style="    overflow: hidden;
+                  width: 40px;
+                  float: left !important;
+                  height: 40px;
+                  position: absolute;
+                  left: 340px;
+                  top: 7px;">
+                      <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/JkqRydwyJnP.png&quot;); background-position: 0px -105px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                  </div>
+                  <!-- cross button -->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="fb-th--2">
+                <div class="think-person-cont flex-row"  style="margin-top: 1.3rem;" >
+                    <div class="think-icon" style="margin-top: 10px;">
+                        <img src="../images/default-img.png" alt="" id="person-img" width="40px" height="40px" style="border-radius: 50px;">
+                    </div>
+                    <div class="think-person--text flex-column">
+                        <span class="name" id="user-name" style="    color: white;
+                        font-size: 12px; margin-bottom: -5px;"></span>
+                        <button class="think-friends" style="    
+                        height: 20px;
+                        margin-left: 9px;
+                        font-size: 12px;
+                        width: 68px;">
+                        <img class="x1b0d499 xep6ejk" src="https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/zPcex_q0TM1.png" alt="Friends" height="12" width="12" style="-webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg); margin-top: 2px;">
+                        Friends</button>
+                    </div>
+                    
+                </div>
+              
+                <div class="ask-content-box flex-row" style="justify-content: space-between;">
+                    <div class="ask-text-whole flex-row" style="color: #b0b3b8; font-size: 15px; margin-top: 10px; margin-bottom: 10px;">
+                        <textarea id="thinkText--text" rows="2" cols="25" class="ask-text child" style="font-size: 14px;" placeholder="What's in your mind?"></textarea>
+
+                    </div>
+                    <div class="happy-icon--text" style="margin-right: 20px; margin-top: 9px;">
+                        <i data-visualcompletion="css-img" class="x1b0d499 xl1xv1r" aria-label="Insert an emoji" role="img" style="height: 24px; width: 24px; background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/fgJJlzQyMji.png&quot;); background-position: 0px -95px; background-size: auto; background-repeat: no-repeat; display: inline-block;"></i>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="fb-th--3">
+                <div class="img-preview--box" id="imgPrewBox">
+                  
+               
+                <div class="img-preview--subbox">
+                    <img src="" alt="" id="imgPreveiewIMg" style="width: 303px;">
+                           <div class="img-preview--icon" style="text-align: center;" >
+                            <div class="icon-imgPreview--bg" id="addImgIcon">
+                                
+                                <label class="ImgPOstImg" for="inputImg">
+                                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk " style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/FjgFSs1gHmM.png&quot;); background-position: 0px -62px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;    position: absolute;
+                                    top: 10px;
+                                    left: 10px;
+                                    -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg); margin-top: 2px;"></i>
+                                </label>
+                             <input type="file" id="inputImg" class="userImgPost">
+                        </div>
+                           </div>
+                           <div class="img-preview--text" style="text-align: center;">
+                            <h4 class="text-imgpreveiw addImgText" style="color: white; margin-top: 5.5rem;">Add Photos/Videos</h4>
+                           </div>
+                </div>
+            </div>
+    
+            </div>
+            <div class="fb-th--4">
+               <div class="add-post">
+                <div id="add-post--btnImg">
+                    <!-- button -->
+                    <span class="post-text">Post</span>
+                </div>
+               </div>
+            </div>
+        </div>
+ 
+    </div>
+    <!-- -------------------------- nav bar section ----------------------------- -->
+ 
+       <nav class="nav-bar">
+        <div class="nav-bar-section">
+            <div class="nav-bar--box flex-row space-btw">
+                <div class="nav-bar--boxsub">
+                   <div class="logo">
+                    <svg aria-label="Facebook logo" class="logo-img" role="img" viewBox="0 0 120 24" width="120"><path d="m109.202 14.864 4.404-7.03h4.746l-4.622 7.278 4.808 7.463h-4.746l-4.59-7.215v7.215h-4.467V.433l4.467-.402v14.833ZM98.596 14.524c0-1.951-.807-3.5-2.885-3.5s-2.885 1.549-2.885 3.5v1.363c0 1.95.807 3.499 2.885 3.499s2.885-1.549 2.885-3.5v-1.362ZM88.36 15.577v-.743c0-4.243 2.42-7.309 7.351-7.309s7.351 3.066 7.351 7.309v.743c0 4.242-2.42 7.308-7.351 7.308-4.932 0-7.351-3.066-7.351-7.308ZM82.406 14.524c0-1.951-.807-3.5-2.884-3.5-2.079 0-2.885 1.549-2.885 3.5v1.363c0 1.95.806 3.499 2.885 3.499 2.077 0 2.884-1.549 2.884-3.5v-1.362Zm-10.235 1.053v-.743c0-4.243 2.419-7.309 7.35-7.309 4.932 0 7.352 3.066 7.352 7.309v.743c0 4.242-2.42 7.308-7.352 7.308-4.931 0-7.35-3.066-7.35-7.308ZM66.216 14.648c0-2.075-.806-3.623-2.946-3.623-1.83 0-2.823 1.3-2.823 3.406v1.548c0 2.106.993 3.407 2.823 3.407 2.14 0 2.946-1.549 2.946-3.623v-1.115Zm4.467 1.022c0 4.118-1.985 7.215-6.08 7.215-2.233 0-3.783-1.115-4.404-2.539v2.23h-4.218V.434L60.447.03v9.848c.651-1.3 2.078-2.354 4.157-2.354 4.094 0 6.079 3.097 6.079 7.216v.929ZM44.723 13.843h5.397v-.372c0-1.61-.651-2.88-2.606-2.88-2.016 0-2.791 1.27-2.791 3.252m-4.466 1.92v-1.301c0-4.18 2.388-6.937 7.257-6.937 4.59 0 6.607 2.787 6.607 6.875v2.353h-9.398c.093 2.014.992 2.912 3.474 2.912 1.675 0 3.443-.341 4.745-.898l.807 3.065c-1.179.62-3.598 1.084-5.738 1.084-5.645 0-7.754-2.818-7.754-7.153M35.388 7.525c1.737 0 3.38.372 4.28.991l-.992 3.159c-.683-.34-1.8-.682-2.978-.682-2.42 0-3.474 1.394-3.474 3.778v.868c0 2.384 1.055 3.778 3.474 3.778 1.179 0 2.295-.34 2.978-.682l.992 3.16c-.9.618-2.543.99-4.28.99-5.242 0-7.63-2.818-7.63-7.34v-.68c0-4.522 2.388-7.34 7.63-7.34M15.973 15.732c0 2.198.806 3.654 2.884 3.654 1.83 0 2.76-1.332 2.76-3.438v-1.486c0-2.106-.93-3.437-2.76-3.437-2.078 0-2.884 1.455-2.884 3.654v1.053Zm-4.467-.991c0-4.119 1.954-7.216 6.049-7.216 2.233 0 3.598 1.146 4.249 2.57v-2.26h4.28v14.74h-4.28v-2.23c-.62 1.425-2.016 2.54-4.25 2.54-4.094 0-6.048-3.097-6.048-7.215v-.93ZM9.274 3.592c-1.396 0-1.8.62-1.8 1.982v2.26h3.723l-.372 3.655h-3.35v11.086H3.009V11.49H0V7.835h3.009V5.636C3.009 1.951 4.497 0 8.654 0c.9 0 1.954.062 2.605.155v3.437H9.274Z"></path></svg>
+                   </div>
+                </div>
+                <!--  -->
+                <div class="nav-bar--boxres">
+                    <div class="search-icon">
+                         <svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg>   
+                    </div>
+            </div>
+            <!--  -->
+                <div class="nav-bar--boxsub search-navbox">
+                     <label class="search-btn flex-row space-btw">
+                        <span class="icon-btn">
+                        <svg fill="currentColor" viewBox="0 0 16 16" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg> 
+                        </span>
+                        <input type="search" aria-label="Search Facebook" placeholder="Search Facebook" class="fb-search">
+                     </label>
+                </div>
+           <!--  -->
+                <div class="nav-bar--boxsub">
+                    <ul class="list-icon flex-row space-btw">
+                        <li class="list-icon1">
+                           <div class="msg-icon">
+                            <svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 msg" fill="currentColor" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg>
+                           </div>
+                        </li>
+                        <li class="list-icon1">
+                            <div class="notif-icon">
+                                <svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
+                            </div>
+                        </li>
+                        <li class="list-icon1">
+                            <div class="person-icon" id = "logout-BTN">
+                                <img src="../images/default-img.png" alt="" id="person-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+  
+
+ <!-- ----------------- Responsive bar starts here -->
+
+             <div class="res-navbar">
+                <div class="res-navbar-box flex-row">
+                   <div class="navbar-box-item">
+                       <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" id="home" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/-o_lAxiM26R.png');background-position:0 -56px;background-size:34px 248px;width:20px;height:20px;background-repeat:no-repeat;display:inline-block"></i>
+                   </div>
+                   <div class="navbar-box-item">
+                       <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/Hi8S_EICcX6.png');background-position:0 0;background-size:26px 26px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                   </div>
+                   <div class="navbar-box-item">
+                       <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/XmwA3tpvFJG.png');background-position:0 -52px;background-size:26px 78px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                   </div>
+                   <div class="navbar-box-item">
+                       <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/XmwA3tpvFJG.png');background-position:0 -26px;background-size:26px 78px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                   </div>
+                   <div class="navbar-box-item">
+                       <svg viewBox="0 0 28 28" alt="" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0" id="home" fill="currentColor" height="24" width="24"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
+                   </div>
+                   
+                   
+
+
+                </div>
+             </div>
+  <!-- ----------------- Responsive bar ends here -->
+            </div>
+       </nav>
+       <!-- -------------------------- main section -------------------------------->
+       <main class="main">
+        <div class="content flex-row space-btw">
+            <!-- ------------------ Section - one ----------------------------- --->
+            <div class="section-1">
+                <div class="side-bar-content">
+                
+                        <aside class="side-bar">
+                            <ul class="side-bar-list">
+                                <div class="first-part">
+                                    <li class="list-item">
+                                    <div class="list-bar">
+                                        <div class="icon-img home-icon">
+                                            <svg viewBox="0 0 28 28" id="home" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt" fill="currentColor" height="28" width="28"><path d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"></path></svg>
+                                        </div>
+                                        <div class="icon-text">
+                                            Home
+                                        </div>
+                                    </div>
+                                </li>
+                                <a href="./profile.html" id="personNameIs">
+                                <li class="list-item" >
+                                    <div class="list-bar">
+                                        <div class="person-icon2">
+                                            <img src="../images/default-img.png" alt="" id="person-img" width="24px" height="24px">
+                                        </div>
+                                        <div class="icon-text" id="user-name" style="margin-top:1px !important;">
+                                            Ania Mahmood
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                                </div>
+                                <!-- --------------------------- -->
+                                <div class="second-part">
+                                    <!-- ----------------------- -->
+                                    <li class="list-item">
+                                        <div class="list-bar">
+                                            <div class="icon-img friend-icon">
+                                                <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png');background-position:0 -296px;background-size:auto;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>                                            </div>
+                                            <a href="./friends.html" class="icon-text" style="margin-top: 6px;">
+                                                Friends
+                                            </a>
+                                        </div>
+                                    </li>
+                                <!-- ---------------------------- -->
+                                <li class="list-item">
+                                    <div class="list-bar">
+                                        <div class="icon-img recent-icon">
+                                            <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png');background-position:0 -444px;background-size:auto;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+                                        </div>
+                                        <div class="icon-text">
+                                             Memories
+                                          </div>
+                                    </div>
+                                </li>
+                                <!-- ---------------------------- -->
+                                <li class="list-item">
+                                    <div class="list-bar">
+                                        <div class="icon-img watch-icon">
+                                            <i data-visualcompletion="css-img" class="" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png&quot;); background-position: 0px -518px; background-size: auto; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+                                        </div>
+                                        <div class="icon-text">
+                                            Watch
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ---------------------------- -->
+                                <li class="list-item">
+                                    <div class="list-bar">
+                                        <div class="icon-img group-icon">
+                                            <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png');background-position:0 -37px;background-size:auto;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>                                        </div>
+                                        <a href="./groups.html" class="icon-text">
+                                            Groups
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- ---------------------------- -->
+                                <li class="list-item">
+                                    <div class="list-bar">
+                                        <div class="icon-img market-icon">
+                                            <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/4GR4KRf3hN2.png');background-position:0 -185px;background-size:auto;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>                                        </div>
+                                        <div class="icon-text">
+                                            Saved
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ---------------------------- -->
+                                <li class="list-item">
+                                    <div class="list-bar  see-all-pad">
+                                        <div class="see-icon" id="see-all">
+                                            <svg fill="currentColor" viewBox="0 0 16 16" width="1.2em" height="1.2em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x198g3q0 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-448 -544)"><path fill-rule="nonzero" d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z"></path></g></svg>                                        </div>
+                                        <div class="icon-text see-all-text">
+                                            See all
+                                        </div>
+                                    </div>
+                                </li>
+                                </div>
+                                <!-- ------------------------------- -->
+                       
+                                </li>
+                               
+                            </ul>
+                          </aside>
+
+
+
+
+
+<!-- --------------------------------------------- Responsive side bar content -->
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<aside class="side-bar res-sidebar">
+    <ul class="side-bar-list">
+        <div class="first-part">
+            <li class="list-item">
+            <div class="list-bar">
+                <div class="icon-img home-icon">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xi3auck" id="home" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/-o_lAxiM26R.png');background-position:0 -56px;background-size:34px 248px;width:20px;height:20px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        <li class="list-item">
+            <div class="list-bar">
+                <div class="person-icon2">
+                    <img src="./images/person.jpg" alt="" id="person-img" width="24px" height="24px">
+                </div>
+            </div>
+        </li>
+        </div>
+        <!-- --------------------------- -->
+        <div class="second-part">
+            <!-- ----------------------- -->
+            <li class="list-item">
+                <div class="list-bar">
+                    <div class="icon-img friend-icon">
+                        <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/Hi8S_EICcX6.png');background-position:0 0;background-size:26px 26px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                    </div>
+                </div>
+            </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar">
+                <div class="icon-img recent-icon">
+                    <img draggable="false" height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/G1ThdFfz_oV.png">
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar">
+                <div class="icon-img watch-icon">
+                    <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/XmwA3tpvFJG.png');background-position:0 -52px;background-size:26px 78px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar">
+                <div class="icon-img group-icon">
+                    <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/XmwA3tpvFJG.png');background-position:0 0;background-size:26px 78px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar">
+                <div class="icon-img market-icon">
+                    <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/XmwA3tpvFJG.png');background-position:0 -26px;background-size:26px 78px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar  see-all-pad">
+                <div class="see-icon" id="see-all">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk see" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/Xl_1NW0SBaw.png');background-position:0 -168px;background-size:22px 276px;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        </div>
+        <!-- ------------------------------- -->
+        <div class="third-part">
+            <!-- ----------------------- -->
+            <li class="list-item">
+                <div class="grp-pad">
+                    <div class="groups-img">
+                      <img src="./images/sidebar-img/sidimg-3.png " width="30px" height="30px" alt="" class="grp-1"> 
+                    </div>
+                </div>
+            </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="grp-pad">
+                <div class="groups-img">
+                  <img src="./images/sidebar-img/sidimg-2.jpg " width="30px" height="30px" alt="" class="grp-1"> 
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="grp-pad">
+                <div class="groups-img">
+                  <img src="./images/sidebar-img/sidimg-4.png " width="30px" height="30px" alt="" class="grp-1"> 
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar  see-all-pad">
+                <div class="see-icon" id="see-all">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk"  alt="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/NVIInJW6lbL.png');background-position:0 -1334px;background-size:26px 1452px;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        </div>
+        <!-- ---------------------------------- -->
+        <div class="fourth-part">
+            <!-- ----------------------- -->
+            <li class="list-item">
+                <div class="grp-pad">
+                    <div class="groups-img">
+                      <img src="./images/sidebar-img/sidimg-6.jpg " width="30px" height="30px" alt="" class="grp-1"> 
+                    </div>
+                </div>
+            </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="grp-pad">
+                <div class="groups-img">
+                  <img src="./images/sidebar-img/sidimg-7.jpg " width="30px" height="30px" alt="" class="grp-1"> 
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="grp-pad">
+                <div class="groups-img">
+                  <img src="./images/sidebar-img/sidimg-1.jpg " width="30px" height="30px" alt="" class="grp-1"> 
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+        <li class="list-item">
+            <div class="list-bar  see-all-pad">
+                <div class="see-icon" id="see-all">
+                    <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/Xl_1NW0SBaw.png');background-position:0 -186px;background-size:22px 276px;width:16px;height:16px;background-repeat:no-repeat;display:inline-block"></i>
+                </div>
+            </div>
+        </li>
+        <!-- ---------------------------- -->
+       
+    </ul>
+  </aside>
+
+
+<!-- --------------------------------------------- Responsive side bar content -->
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+
+                    </div>
+            </div>
+              <!-- ------------------ Section - two ----------------------------- -->
+             <div class="section-2">
+                <div class="all-boxes">
+
+
+                    <div class="head-box1">
+                        <div class="sub-section--box1">
+                            <!-- --------------------------- -->
+                            <div class="sub-section--subbox1 ">
+                                <ul class="sub-section--list flex-row space-btw">
+                                    <!-- --------------------------- -->
+                                   <li class="sub-section--item flex-row " id="story-border">
+                                       <div class="sub-section--item-icon" id="stories">
+                                           <svg fill="currentColor" viewBox="0 0 20 20" width="1.3em" height="1.3em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x1qq9wsj x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M457 368.832a.5.5 0 0 0 .883.323l1.12-1.332a.876.876 0 0 1 .679-.323h3.522a2.793 2.793 0 0 0 2.796-2.784v-10.931a2.793 2.793 0 0 0-2.796-2.785h-3.454a2.75 2.75 0 0 0-2.75 2.75v15.082zm-1.5 0a.5.5 0 0 1-.883.323l-1.12-1.332a.876.876 0 0 0-.679-.323h-3.522a2.793 2.793 0 0 1-2.796-2.784v-10.931a2.793 2.793 0 0 1 2.796-2.785h3.454a2.75 2.75 0 0 1 2.75 2.75v15.082z"></path></g></svg>   
+                                       </div>
+                                       <div class="sub-section--item-text">
+                                             Stories
+                                       </div>
+                                   </li>
+                                   <!-- --------------------------- -->
+                                   <li class="sub-section--item flex-row">
+                                       <div class="sub-section--item-icon">
+                                           <svg fill="currentColor" viewBox="0 0 20 20" width="1.3em" height="1.3em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M454.59 355h4.18l-2.4-4h-3.28c-.22 0-.423.008-.624.017L454.59 355zm6.514 0h3.695c-.226-1.031-.65-1.79-1.326-2.489-1.061-1.025-2.248-1.488-4.392-1.511h-.379l2.401 4zm-8.78 0-1.942-3.64c-.73.247-1.315.63-1.868 1.165-.668.69-1.09 1.445-1.315 2.475h5.125zm7.043 7.989a.711.711 0 0 1-.22.202l-4.573 2.671-.05.027a.713.713 0 0 1-1.024-.643v-5.343l.002-.056a.714.714 0 0 1 1.072-.56l4.572 2.67.054.036a.714.714 0 0 1 .167.996zm-12.366-5.99V363.083l.001.03v.112l.005.048h.001c.05 2.02.513 3.176 1.506 4.203 1.102 1.066 2.324 1.525 4.577 1.525h5.99c2.144-.023 3.331-.486 4.392-1.511 1.005-1.04 1.467-2.198 1.517-4.217h.003c.003-.1.005-.1.006-.204l.001-.156V357h-18z"></path></g></svg>
+                                       </div>
+                                       <div class="sub-section--item-text">
+                                             Reels
+                                       </div>
+                                   </li>
+                                   <!-- --------------------------- -->
+                                   <li class="sub-section--item flex-row">
+                                       <div class="sub-section--item-icon">
+                                           <svg fill="currentColor" viewBox="0 0 20 20" width="1.3em" height="1.3em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M457.25 361H455v2.25a1 1 0 0 1-2 0V361h-2.25a1 1 0 0 1 0-2H453v-2.25a1 1 0 0 1 2 0V359h2.25a1 1 0 0 1 0 2m8.241-5.889a.962.962 0 0 0-.998.063L462 356.938v-1.188a2.754 2.754 0 0 0-2.75-2.75h-10.5a2.754 2.754 0 0 0-2.75 2.75v8.5a2.754 2.754 0 0 0 2.75 2.75h10.5a2.754 2.754 0 0 0 2.75-2.75v-1.188l2.503 1.77a.953.953 0 0 0 .988.057.95.95 0 0 0 .509-.841v-8.096a.95.95 0 0 0-.509-.841"></path></g></svg>
+                                       </div>
+                                       <div class="sub-section--item-text">
+                                             Rooms
+                                       </div>
+                                   </li>
+                               </ul>
+                            </div>
+                          <!-- ----------------------------- -->
+                          <div class="sub-section--subbox2">
+                             <div class="stories-section-box ">
+        
+                            <ul class="stories-list flex-row ">
+                                <li class="stories-item">
+                                    <div class="item-box">
+                                        <div class="item-box--img">
+                                            <img src="../images/default-img.png" alt="" width="112.5" height="151" id="person-img">
+                                        </div>
+                                        
+                                        <div class="item-box--icon">
+                                            <div class="story-icon">
+                                               <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x14ctfv x1qx5ct2 xw4jnvo" id="story-icon"><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg> 
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="item-box--text">
+                                            Create Story
+                                        </div>
+                                    </div>
+                                </li>
+                        
+                              
+                              
+                           </li>
+                           <!-- ---------------------------------- -->
+                           
+                            </ul>
+                        </div>
+                          </div>
+                        </div>
+                </div>
+            
+                <!-- ---------------------- sub section -- box 2 -->
+                <div class="head-box2">
+
+
+
+                                 <!-- ---------------------------------------------- RESPONSIVE SEARCH -->
+                <div class="script-content-box">
+                    <div class="script-contnet flex-row col-gapx1">
+                        <div class="script-icon">
+                            <div class="script-icon--img">
+                                <img src="../images/default-img.png" alt="" id="person-img" width="40px" height="40px" style="border-radius: 50%;">
+                            </div>
+                        </div>
+                        <div class="text-btn--box">
+                            <label class="text-btn">
+                               <input type="search" aria-label="Search Facebook" placeholder="Search Facebook" class="text-search">
+                            </label>
+                        </div>
+                        <div class="script-item--icon res-photo">
+                            <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/DBayjSwl2Zw.png');background-position:0 -242px;background-size:34px 558px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                        </div>
+                    </div>
+                </div>
+          
+              <!-- ---------------------------------------------- RESPONSIVE SEARCH -->
+
+                    <div class="sub-section--box2 flex-column space-btw">
+                         <div class="script-contnet flex-row col-gapx1">
+                        <div class="script-icon">
+                            <div class="script-icon--img">
+                                <img src="../images/default-img.png" alt="" id="person-img" width="40px" height="40px" style="border-radius: 50%;">
+                            </div>
+                        </div>
+                        <div class="text-btn--box" id="thinks">
+                            <label class="text-btn">
+                               <input type="search" aria-label="Search Facebook" placeholder="What's on your mind?" style="border: none;" class="text-search" id="thinksTwo">
+                            </label>
+                        </div>
+                    </div> 
+
+
+
+                    <!-- ----------------------- -->
+                    <div class="script-list flex-row ">
+                        <div class="script-item-box">
+                            <div class="script-item flex-row col-gapx1">
+                                <div class="script-item--icon">
+                                    <img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/c0dWho49-X3.png">                                </div>
+                                <div class="script-item--text">
+                                    <span class="script-text">
+                                        Live video
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- --------------------- -->
+                        <div class="script-item-box" id="scriptBox">
+                            <div class="script-item flex-row col-gapx1" id="scriptItemBox">
+                                <div class="script-item--icon">
+                                    <img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png">                                </div>
+                                <div class="script-item--text">
+                                    <span class="script-text">
+                                        Photo/Video
+                                    </span>   
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <!-- -------------------------- -->
+                        <div class="script-item-box">
+                            <div class="script-item flex-row col-gapx1">
+                                <div class="script-item--icon">
+                                    <img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png">                                </div>
+                                <div class="script-item--text">
+                                    <span class="script-text">
+                                        Feelings/Activietes
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                  
+                
+                
+                </div>
+                    
+            </div>
+
+                   <!-- head box-3 -->
+                   <div class="head-box3">
+                    <div class="section-post"  id="postSec" style="flex-direction: column; margin-left: 4.3rem;">
+                        <div class="post-box" id="postBox">
+
+                      
+                            <!-- <div class="post">
+                                <div class="post-content flex-row space-btw">
+                                    <div class="post-content--box1 flex-row col-gapx1">
+                                        <div class="post-content--img">
+                                            <img src="./images/sidebar-img/sidimg-4.png" alt="" width="36px" height="36px" class="pst-icon">
+                                        </div>
+                                        <div class="post-conetent--text flex-column">
+                                            <span class="txt-lg txt-white">Graphic desinger</span>
+                                            <span class="txt-sm txt-white">Cool Images</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-content--box2 flex-row col-gapx1">
+                                        <div class="post-content--icon">
+                                            <svg fill="currentColor" viewBox="0 0 20 20" width="1.5em" height="1.5em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo" id="info"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                                        </div>
+                                        <div class="post-content--icon">
+                                            <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" id="cross" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/0CrhH_2S8bD.png');background-position:-110px -110px;background-size:190px 204px;width:20px;height:20px;background-repeat:no-repeat;display:inline-block"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-img">
+                                    <img src="./images/post-img/post-10.jpg" alt="" class="pst-img">
+                                </div>
+                                <div class="post-reaction">
+                                     <div class="post-reaction--box1 flex-row space-btw">
+                                        <div class="rec-smicons flex-row">
+                                            <div class="like">
+                                                <img class="x16dsc37" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e" width="18">
+                                            </div>
+                                            <div class="heart">
+                                                <img class="x16dsc37" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FF6680'/%3e%3cstop offset='100%25' stop-color='%23E61739'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.710144928 0 0 0 0 0 0 0 0 0 0.117780134 0 0 0 0.349786932 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 100 16A8 8 0 008 0z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M10.473 4C8.275 4 8 5.824 8 5.824S7.726 4 5.528 4c-2.114 0-2.73 2.222-2.472 3.41C3.736 10.55 8 12.75 8 12.75s4.265-2.2 4.945-5.34c.257-1.188-.36-3.41-2.472-3.41'/%3e%3c/g%3e%3c/svg%3e" width="18">
+                                            </div>
+                                            <div class="emoji">
+                                                <img class="x16dsc37" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='10.25%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FEEA70'/%3e%3cstop offset='100%25' stop-color='%23F69B30'/%3e%3c/linearGradient%3e%3clinearGradient id='d' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23472315'/%3e%3cstop offset='100%25' stop-color='%238B3A0E'/%3e%3c/linearGradient%3e%3clinearGradient id='e' x1='50%25' x2='50%25' y1='0%25' y2='81.902%25'%3e%3cstop offset='0%25' stop-color='%23FC607C'/%3e%3cstop offset='100%25' stop-color='%23D91F3A'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/%3e%3c/filter%3e%3cpath id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='url(%23d)' d='M3 8.008C3 10.023 4.006 14 8 14c3.993 0 5-3.977 5-5.992C13 7.849 11.39 7 8 7c-3.39 0-5 .849-5 1.008'/%3e%3cpath fill='url(%23e)' d='M4.541 12.5c.804.995 1.907 1.5 3.469 1.5 1.563 0 2.655-.505 3.459-1.5-.551-.588-1.599-1.5-3.459-1.5s-2.917.912-3.469 1.5'/%3e%3cpath fill='%232A3755' d='M6.213 4.144c.263.188.502.455.41.788-.071.254-.194.369-.422.371-.78.011-1.708.255-2.506.612-.065.029-.197.088-.332.085-.124-.003-.251-.058-.327-.237-.067-.157-.073-.388.276-.598.545-.33 1.257-.48 1.909-.604a7.077 7.077 0 00-1.315-.768c-.427-.194-.38-.457-.323-.6.127-.317.609-.196 1.078.026a9 9 0 011.552.925zm3.577 0a8.953 8.953 0 011.55-.925c.47-.222.95-.343 1.078-.026.057.143.104.406-.323.6a7.029 7.029 0 00-1.313.768c.65.123 1.363.274 1.907.604.349.21.342.44.276.598-.077.18-.203.234-.327.237-.135.003-.267-.056-.332-.085-.797-.357-1.725-.6-2.504-.612-.228-.002-.351-.117-.422-.37-.091-.333.147-.6.41-.788z'/%3e%3c/g%3e%3c/svg%3e" width="18">
+                                            </div>
+                                        </div>
+                                        <div class="sm-text">
+                                            <span class="txt-white txt-sm">1 comment</span>
+                                        </div>
+                                     </div>
+                                     <div class="post-reaction--box2">
+                                        <div class="reaction-list flex-row space-btw">
+                                            <div class="like-btn flex-row col-gapx1 rec-btn">
+                                                <div class="like-icon">
+                                                    <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GYWdmyyokPX.png');background-position:0 -172px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+                                                </div>
+                                                <div class="rec-text txt-white">
+                                                    Like
+                                                </div>
+                                            </div>
+                                            <div class="share-btn flex-row col-gapx1 rec-btn">
+                                                  <div class="share-icon">
+                                                   <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GYWdmyyokPX.png&quot;); background-position: 0px -191px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                  </div> 
+                                                  <div class="rec-text txt-white">
+                                                    Share
+                                                  </div>
+                                            </div>
+                                            <div class="comment-btn flex-row col-gapx1 rec-btn">
+                                                <div class="comment-icon">
+                                                    <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GYWdmyyokPX.png');background-position:0 -134px;background-size:auto;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>
+                                                </div>
+                                                <div class="rec-text txt-white">
+                                                     Comment
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>  -->
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+            </div>
+              <!-- ------------------ Section - three ----------------------------- -->
+             <div class="section-3"> 
+                <div class="contact-section">
+                    <div class="contact-box-1">
+                        <div class="contact-text-box flex-row space-btw">
+                            <div class="contatc-text txt-white txt-lg">
+                                Contacts
+                            </div>
+                            <div class="contact-icons flex-row col-gapx2">
+                                <div class="video-mkr">
+                                    <svg fill="currentColor" viewBox="0 0 16 16" id="video" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M457.25 552.5H455v2.25a.75.75 0 0 1-1.5 0v-2.25h-2.25a.75.75 0 0 1 0-1.5h2.25v-2.25a.75.75 0 0 1 1.5 0V551h2.25a.75.75 0 0 1 0 1.5m6.38-4.435a.62.62 0 0 0-.64.047l-2.49 1.634v-1.394a1.854 1.854 0 0 0-1.852-1.852l-8.796.002a1.854 1.854 0 0 0-1.851 1.852v6.793c0 1.021.83 1.852 1.852 1.852l1.147-.002h7.648a1.854 1.854 0 0 0 1.852-1.851v-1.392l2.457 1.61a.641.641 0 0 0 .673.071.663.663 0 0 0 .37-.601v-6.167c0-.26-.142-.49-.37-.602"></path></g></svg>
+                                </div>
+                                <div class="search-mkr">
+                                    <svg fill="currentColor" viewBox="0 0 16 16" id="video" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 xlup9mm x1kky2od"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg>
+                                </div>
+                                <div class="info-mkr">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" id="video" width="1em" height="1em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq xcza8v6 x1qx5ct2 xw4jnvo"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                                </div>
+                            </div>
+                        </div>
+               
+                    </div>
+                
+                </div>
+             
+                    <li class="list-item">
+                        <div class="list-bar  see-all-pad">
+                            <div class="see-icon" id="see-all">
+                                
+                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/NK4GVq24hmM.png');background-position:0 -965px;background-size:auto;width:20px;height:20px;background-repeat:no-repeat;display:inline-block"></i>
+
+                           </div>
+                            <div class=" see-all-text" style="color: white;">
+                                 Create new group
+                            </div>
+                        </div> 
+                    </li>
+     
+          </div>
+            <!--  -->
+        </div>
+       </main>
+
+     
+        <div class="logOut">
+            <div class="logOut-BG">
+                <a href="../index.html">
+                    <div class="list-bar">
+                        <div class="list-bar--icon" id="logOutIcon">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk css-imgICON" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/19rznoKG6WS.png&quot;); background-position: 0px -608px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <div class="list-bar--text">Log out</div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+
+        <div class="logOut">
+            <div class="logOut-BG">
+                <a href="../index.html">
+                    <div class="list-bar">
+                        <div class="list-bar--icon" id="logOutIcon">
+                            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk css-imgICON" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/19rznoKG6WS.png&quot;); background-position: 0px -608px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                        </div>
+                        <div class="list-bar--text">Log out</div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+
+</body>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- <script src="../JS/views/view.js" type="module"></script> -->
+<script src="../JS/views/view.js" type="module"></script>
+
+<script>
+ 
+
+  
+
+
+ 
+</script>
+ 
+</html>
